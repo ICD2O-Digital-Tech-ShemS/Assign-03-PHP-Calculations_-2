@@ -36,8 +36,8 @@
 			<!-- iframe for the results to show on the web page. -->
 			<iframe id="results" name="results">
         <div id="user-info">
-          <div id="$speed"></div>
-          <div id="$speed"></div>
+          <div id="$speedA"></div>
+          <div id="$speedB"></div>
         </div>
       </iframe>
 	</body>
