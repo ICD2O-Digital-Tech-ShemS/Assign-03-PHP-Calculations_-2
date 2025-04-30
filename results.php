@@ -1,13 +1,11 @@
 <?php
-	// get the indexes of refraction from the textfields
-	$indRef = $_POST['indexRefDiamond'];
-    $indRef2 = $_POST['indexRefWater'];
+	// get the radius from the textfields
+	$radius = $_POST['radius'];
 
-	// calculate the speed of light in different mediums
-	const $c = 3.00 * 10**8;
-    $speedA = $c/$indRef;
-    $speedB = $c/$indRef2;
+	// calculate the volume of the sphere
+	$PI = 3.14;
+    $volume = (4/3) * $PI * pow($radius,3);
+    $volume = round($volume,2);
 ?>
 	<h3>Results:</h3>
-	The speed of light in diamond is <?php echo "$speedA" ?>m/s.
-    The speed of light in water is <?php echo "$speedB" ?>m/s.
+	The volume of the Sphere is <?php echo "$volume" ?>cm<sup>3</sup>.
