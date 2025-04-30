@@ -25,15 +25,20 @@
 		?>
 		<!-- form to get the bases and height from the user -->
     <form action="./results.php" method="post" target="results">
-      <label for="radius">Radius (cm):</label>
-      <input type="float" id="radius" placeholder="Enter value..." name="radius"><br><br>
-      <input type="submit" value="Calculate Volume">
+      <label for="speedLightDiamond">Speed of Light in Diamond (m/s):</label>
+      <input type="float" id="indexRefDiamond" placeholder="Index of refraction(n)..." name="speedLightDiamond"><br><br>
+      <label for="speedLightWater">Speed of Light in Water (m/s):</label>
+      <input type="float" id="indexRefWater" placeholder="Index of refraction(n)..." name="speedLightWater"><br><br>
+      <input type="submit" value="Calculate Speed">
     </form>
 
 			<!-- iframe for the results to show on the web page. -->
 			<iframe id="results" name="results">
         <div id="user-info">
-        <div id="$volume"></div>
+        <div id="$speedDiamond"></div>
+        </div>
+        <div id="user-info">
+        <div id="$speedWater"></div>
         </div>
       </iframe>
 	</body>
