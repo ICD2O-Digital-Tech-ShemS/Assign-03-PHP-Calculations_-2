@@ -4,11 +4,9 @@
     $speed2 = $_POST['indexRefWater'];
 
 	// calculate the speed of light in diamond and water
-	$c = 300000000;
+	const $c = 300000000;
     $speedDiamond = $c / $speed1;
-    $speedDiamond = round($speedDiamond,2);
     $speedWater = $c / $speed2;
-    $speedWater = round($speedWater,2);
 ?>
 	<h3>Results:</h3>
 	The speed of light in diamond is <?php echo "$speedDiamond" ?>m/s.
