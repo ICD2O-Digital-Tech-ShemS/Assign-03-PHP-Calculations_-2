@@ -4,13 +4,11 @@
     $indRef2 = $_POST['indexRefWater'];
 
 	// calculate the speed of light in different mediums
-	$c = 3.00 * 10**8;
+	const $c = 3.00 * 10**8;
     $speedA = $c/$indRef;
-    $speedA = round($speedA,2);
+    number_format($speedA, 2);
     $speedB = $c/$indRef2;
-    $speedB = round($speedB,2);
-    
-    // display results to user
+    number_format($speedB, 2);
 ?>
 	<h3>Results:</h3>
 	The speed of light in diamond is <?php echo "$speedA" ?>m/s.
