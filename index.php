@@ -37,7 +37,7 @@
 			<iframe id="results" name="results">
         <div id="user-info">
           <div id="$speedA"></div>
-          <div id="$speedB"></div>
+          <!-- <div id="$speedB"></div> -->
         </div>
       </iframe>
 	</body>

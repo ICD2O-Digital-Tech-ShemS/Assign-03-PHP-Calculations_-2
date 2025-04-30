@@ -6,9 +6,7 @@
 	// calculate the speed of light in different mediums
 	const $c = 3.00 * 10**8;
     $speedA = $c/$indRef;
-    number_format($speedA, 2);
     $speedB = $c/$indRef2;
-    number_format($speedB, 2);
 ?>
 	<h3>Results:</h3>
 	The speed of light in diamond is <?php echo "$speedA" ?>m/s.
