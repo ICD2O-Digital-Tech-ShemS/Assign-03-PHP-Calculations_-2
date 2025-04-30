@@ -3,7 +3,7 @@
   <head>
     <!-- Metadata -->
     <meta charset="utf-8">
-    <meta name="description" content="Volume of a Sphere">
+    <meta name="description" content="Speed of Light">
     <meta name="keywords" content="immaculata, icd2o">
     <meta name="author" content="Kukwac">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +15,15 @@
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Title -->
-    <title>Volume of a Sphere</title>
+    <title>Speed of Light</title>
   </head>
   <body>
 		<!-- php echo to print the html to the page -->
     <?php 
-			echo "<h1>Volume of a Sphere</h1>";
-			echo "<h3>This program will calculate the volume of a Sphere.</h3>";
+			echo "<h1>Speed of Light</h1>";
+			echo "<h3>This program will calculate the Speed of Light in different mediums.</h3>";
 		?>
-		<!-- form to get the bases and height from the user -->
+		<!-- form to get the indexes of refraction from the user -->
     <form action="./results.php" method="post" target="results">
       <label for="speedLightDiamond">Speed of Light in Diamond (m/s):</label>
       <input type="float" id="indexRefDiamond" placeholder="Index of refraction(n)..." name="speedLightDiamond"><br><br>
@@ -36,8 +36,6 @@
 			<iframe id="results" name="results">
         <div id="user-info">
         <div id="$speedDiamond"></div>
-        </div>
-        <div id="user-info">
         <div id="$speedWater"></div>
         </div>
       </iframe>
